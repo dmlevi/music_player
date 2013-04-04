@@ -47,6 +47,8 @@ table {
     border-spacing: 0;
 }
 
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 /*custom*/
 
 body {
@@ -56,13 +58,10 @@ body {
 
 header {
     width: 100%;
+    color: #001B30;
+    clear: both;
+    padding: 5px 0;
 }
-
-header p {
-    float: right;
-    margin-right: 100px;
-}
-
 
 #sonic {
     padding: 50px 100px;
@@ -77,36 +76,40 @@ header p {
     border-radius: 50%;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Lato', sans-serif;
-    font-size: 90px;
+    font-size: 30px;
     text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
-    text-align: center; 
     margin-top: 30px;
-    color: #001B30;
+    line-height: 1.2em
+}
+
+section {
+    font-size: 14px;
+    color: #5D9C6D;
+    position: relative;
+    bottom: 400px;
+    left: 600px;
 }
 
 h2 {
     font-size: 30px;
+    text-align: center;
+        padding: 5px 0;
 }
 
-section {
-    float: right;
-    margin: 50px 300px 0 0;
-    width: 350px;
-    font-size: 14px;
-    text-align: right;
-    color: #5D9C6D;
+h3 {
+    font-size: 24px;
+    text-align: center;
+        padding: 5px 0;
 }
 
 section h2 {
-    text-align: right;
     font-size: 60px;
     color: #5D9C6D;
 }
 section p {
-    margin-top: 20px;
-    line-height: 1.4em;
+    margin-top: 10px;
 }
 
 /*icomoon*/
@@ -122,9 +125,7 @@ section p {
     font-style: normal;
 }
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.icon-new-tab, .icon-volume-high, .icon-share, .icon-thumbs-up, .icon-thumbs-up-2, .icon-music {
+.icon-new-tab, .icon-volume-high, .icon-share, .icon-thumbs-up, .icon-thumbs-up-2, .icon-music, .icon-github {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -154,7 +155,11 @@ section p {
     content: "\6d";
 }
 
-a.icon-new-tab, a.icon-volume-high, a.icon-share, a.icon-thumbs-up, a.icon-thumbs-up-2, a.icon-music {
+.icon-github:before {
+    content: "\67";
+}
+
+a.icon-new-tab, a.icon-volume-high, a.icon-share, a.icon-thumbs-up, a.icon-thumbs-up-2, a.icon-music, a.icon-github {
     text-decoration: none;
     color: #2E2E2E;
     text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
@@ -166,9 +171,9 @@ a.icon-new-tab, a.icon-volume-high, a.icon-share, a.icon-thumbs-up, a.icon-thumb
     transition: 0.06s ease-in-out;
 }
 
-a.icon-new-tab:hover, a.icon-volume-high:hover, a.icon-share:hover, a.icon-thumbs-up:hover, a.icon-thumbs-up-2:hover, a.icon-music:hover {
+a.icon-new-tab:hover, a.icon-volume-high:hover, a.icon-share:hover, a.icon-thumbs-up:hover, a.icon-thumbs-up-2:hover, a.icon-music:hover, a.icon-github:hover {
     color: #A4A4A4;
-        text-shadow: none;
+    text-shadow: none;
 }
 
 .player {
