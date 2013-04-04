@@ -47,26 +47,34 @@ table {
     border-spacing: 0;
 }
 
+/*custom*/
+
 body {
     font-family: Verdana;
     background-image:  url(../img/noisy-bg-2.png);
-}
-
-#sonic {
-    padding: 50px 100px;
-}
-
-p span {
-    margin-top: 20px;
 }
 
 header {
     width: 100%;
 }
 
+header p {
+    float: right;
+    margin-right: 100px;
+}
+
+
+#sonic {
+    padding: 50px 100px;
+}
+
 .banner {
     background: #98FFB3;
     border-bottom: 1px solid white;
+}
+
+.banner img {
+    border-radius: 50%;
 }
 
 h1, h2 {
@@ -85,7 +93,7 @@ h2 {
 section {
     float: right;
     margin: 50px 300px 0 0;
-    width: 400px;
+    width: 350px;
     font-size: 14px;
     text-align: right;
     color: #5D9C6D;
@@ -94,11 +102,11 @@ section {
 section h2 {
     text-align: right;
     font-size: 60px;
-        color: #5D9C6D;
+    color: #5D9C6D;
 }
 section p {
     margin-top: 20px;
-        line-height: 1.4em;
+    line-height: 1.4em;
 }
 
 /*icomoon*/
