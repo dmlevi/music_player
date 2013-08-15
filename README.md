@@ -1,4 +1,4 @@
 music_player
 ============
 
-Designed a music player using Sketch and then built it in pure HTML and CSS
+I wanted to try out Sketch and Designed a music player. Then I built it in pure HTML and CSS while using icon fonts.
